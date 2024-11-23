@@ -1,7 +1,7 @@
 //
 //
 
-import { Box, Flex, HStack, Image, VStack } from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, Image, VStack, textDecoration } from "@chakra-ui/react";
 import React from "react";
 import Data from "../utils/BannerData";
 import BannerText from "./BannerSlides";
@@ -11,11 +11,12 @@ export const Banner = () => {
   console.log(Data1);
   return (
     <Flex
+    display={{base:"none",md:"none",lg:'flex'}}
     justifyContent={'space-around'}
       width={"100%"}
       height={"50px"}
       backgroundImage={
-        "https://images-static.naikaa.com/media/wysiwyg/2023/common-strip.jpeg"
+        "https://images-static.naikaa.com/media/wysiwyg/2021/common-strip.jpg"
       }
       backgroundRepeat={"no-repeat"}
       backgroundSize={"contain"}
@@ -27,8 +28,10 @@ export const Banner = () => {
       <HStack width={'40%'}>
         {Data1.data.map((el, index) => (
           <>
-            <Box fontWeight={'bold'} >{el.icon}</Box>
-            <Box fontFamily={'Inter , sans-serif'} >{el.title}</Box>
+            <Box display={'flex'}  fontWeight={'bold'} _hover={{ color:'white'}} >
+              <Box m={'auto'}>{el.icon}</Box>
+               <Button fontFamily={'Inter , sans-serif'} background = 'transparent'  textDecoration={'none'} _hover={{background : 'transparent', color:'white'}}>{el.title}</Button></Box>
+            
           {index >= 0 && index<3  ? <>|</> : <></>}
           </>
         ))}

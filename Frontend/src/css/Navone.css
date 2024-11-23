@@ -1,0 +1,120 @@
+#Parent {
+   display: flex;
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+   justify-content: space-between;
+   width:100%;
+   height: 60px;
+}
+
+#son {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    margin: auto;
+    height: 100%;
+   
+}
+
+#son > div {
+    margin: auto;
+}
+#son > div  > button {
+    margin: auto;
+    font-weight: bold;
+  
+   
+}
+
+#logoimg{
+    width: 100%;
+  margin: auto;
+    
+}
+#logo {
+    width: 15%;
+    justify-content: center;
+   
+}
+#second {
+    width: 60%;
+    /* border: 2px solid rgb(162, 0, 255); */
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+#inputbox {
+    
+    background-color: #F4F4F4;
+   width: 100%;
+   border: none;
+   
+
+}
+#inputbox:focus {
+    outline: #F4F4F4;
+
+}
+
+#inputDiv {
+    border-radius: 2%;
+    background-color: #F4F4F4;
+   width: 70%;
+   height: 40px;
+   display: flex;
+   
+   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   justify-content: center;
+}
+#inputDiv > div{
+margin: auto;
+width: 40px;
+/* border: 1px solid blue; */
+height: 30px;
+}
+#inputDiv >div>#icon{
+    width: 100%;
+    height: 100%;
+    color: rgba(133, 129, 129, 0.77);
+   
+    
+}
+
+#second > div {
+    margin: auto;
+}
+
+#second > div > button{
+background-color: #EC2988;
+width: 70px;
+height: 40px;
+border-radius: 9%;
+color: white;
+}
+
+#Daughter {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+#Daughter > div {
+    /* margin: auto; */
+    /* border: 2px solid red; */
+}
+#icondiv{
+    margin: auto;
+
+width: 40px;
+/* border: 1px solid blue; */
+height: 30px;
+margin-right: 180px;
+}
+#icondiv > #icontwo {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#son > div > button:hover {
+    color: #EC2988;
+}

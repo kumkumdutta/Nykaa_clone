@@ -4,7 +4,7 @@ const { CartModel } = require("../Models/Cart.model");
 const CartRouter = express.Router();
 
 CartRouter.get("/mycart", Auth, async (req, res) => {
-    ;
+    
   try {
     const { userId } = req.body;
     const data = await CartModel.find({ userId: userId });

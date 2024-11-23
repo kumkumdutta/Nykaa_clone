@@ -17,9 +17,9 @@ function BannerText() {
   const styleConfig = useStyleConfig("BannerText"); 
 
   return (
-    <Box width={'100%'} alignContent={'center'}>
+    <Box width={'100%'} alignContent={'center'} >
       <Text
-      fontFamily={'Inter , sans-serif'} fontSize={'16px'} fontWeight={500}
+      fontFamily={'Inter, sans-serif !important'} fontSize={'16px'} fontWeight={500} letterSpacing={'-0.1px'} lineHeight={'40px'}
         sx={{
           ...styleConfig,
           opacity: isVisible ? 1 : 0,
@@ -27,7 +27,7 @@ function BannerText() {
           transition: "opacity 0.5s, transform 0.5s",
         }}
       >
-        Diwali Dhamaka Sale - Festive Deals You Can't Miss !
+        Pay Day Sale is Live! Upto 50% Off On Salary Saving Steals
       </Text>
     </Box>
   );
